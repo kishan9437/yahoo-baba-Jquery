@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #box{
+            padding: 10px;
+            border: 1px solid black;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get Method</h1>
+    <div id="box" class="test abc">
+        <h2>Test box1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eius debitis officia deleniti! Illum molestias omnis rem distinctio iusto unde facere fugit illo nam fugiat. Reprehenderit consequuntur a neque deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi quia et, saepe officiis <span>possimus officia laborum temporibus amet harum quae aliquam nostrum nobis maxime soluta inventore</span> error voluptatum deserunt.</p>
+    </div>
+    
+    
+    <script>
+        $(document).ready(function(){
+            var a=$('#box p ').html()
+            console.log(a)
+
+            var a=$('#box').text()
+            console.log(a)
+
+            var a=$('#box').attr('class')
+            console.log(a)
+
+        })
+
+    </script>
+</body>
+</html>

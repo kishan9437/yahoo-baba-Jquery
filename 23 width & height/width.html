@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #box{
+            padding: 10px;
+            border: 10px solid black;
+            background-color: lightgreen;
+            margin: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Replacewith & replaceall Method</h1>
+    <div id="box" class="test ">
+        <h2>Test box1</h2>
+        <p>Lorem, ipsum dolor sit amet <span>consectetur adipisicing elit.</span> Velit eius debitis officia deleniti! Illum molestias omnis rem distinctio iusto unde facere fugit illo nam fugiat. Reprehenderit consequuntur a neque deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quasi quia et, saepe officiis <span>possimus officia laborum temporibus amet harum quae aliquam nostrum nobis maxime soluta inventore</span> error voluptatum deserunt.</p>
+    </div>
+    <br><br>
+    <button id="widthBtn">width</button>   
+    <button id="heightBtn">height</button>   
+    
+    <script>
+        $(document).ready(function(){
+            $('#widthBtn').click(function(){
+                $('#box').width('500px')
+                console.clear();
+                console.log('width :'+ $('#box').width())
+                console.log('inner width :'+ $('#box').innerWidth())
+                console.log('outer width :'+ $('#box').outerWidth())
+                console.log('outer width(true) :'+ $('#box').outerWidth(true))
+            })
+            $('#heightBtn').click(function(){
+                console.clear();
+                console.log('height :'+ $('#box').height())
+                console.log('inner height :'+ $('#box').innerHeight())
+                console.log('outer height :'+ $('#box').outerHeight())
+                console.log('outer height(true) :'+ $('#box').outerHeight(true))
+            })
+        })
+
+    </script>
+</body>
+</html>

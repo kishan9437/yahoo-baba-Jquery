@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #box{
+            padding: 10px;
+            border: 1px solid black;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Events</h1>
+    <form action="" id="sform">
+        <label for="">Name</label><input type="text" name="" id="sname"><br><br>
+        <label for="">Class</label><input type="text" name="" id="sclass"><br><br>
+        <label for="">Country</label>
+        <select name="" id="scountry">
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="nepal">Nepal</option>
+        </select>
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+    
+    <script>
+        $(document).ready(function(){
+            $('#sform').submit(function(){
+                var name=$('#sname').val()
+                var classname=$('#sclass').val()
+                var country=$('#scountry').val()
+
+                alert('Name : '+name + 'class name : '+ classname + 'country : '+ country)
+            })
+        })
+    </script>
+</body>
+</html>

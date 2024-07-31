@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #box{
+            padding: 10px;
+            border: 1px solid black;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Events</h1>
+    <div id="box" class="test">
+        <h2>Test box1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eius debitis officia deleniti! Illum molestias omnis rem distinctio iusto unde facere fugit illo nam fugiat. Reprehenderit consequuntur a neque deleniti!</p>
+    </div>
+    
+    
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+                $(this).css('background-color','green')
+            })
+            
+            $('#box').dblclick(function(){
+                $(this).css('background-color','orange')
+            })
+
+            $('#box').contextmenu(function(){
+                $(this).css('background-color','blue')
+            })
+
+            $('#box').mouseenter(function(){
+                $(this).css('background-color','tan')&&('cursor','pointer')
+            })
+
+            $('#box').mouseleave(function(){
+                $(this).css('background-color','purple')
+            })
+        })
+    </script>
+</body>
+</html>

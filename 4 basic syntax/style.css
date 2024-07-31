@@ -1,0 +1,12 @@
+#test1{
+    background: aqua;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+#test2{
+    background: yellow;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}

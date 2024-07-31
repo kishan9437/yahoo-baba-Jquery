@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #box{
+            padding: 10px;
+            border: 1px solid black;
+            background: lightgreen;
+
+        }
+        .boxg{background-color: aqua;}
+    </style>
+</head>
+<body>
+    <h1>Append & Prepend Method</h1>
+    <ol>
+        <li>items 1</li>
+        <li>items 2</li>
+        <li>items 3</li>
+        <li>items 4</li>
+    </ol>
+    <br>
+    <button id="appendBtn">Append</button> 
+    <button id="prependBtn">Prepend</button>   
+    
+    <script>
+        $(document).ready(function(){
+            $('#appendBtn').click(function(){
+                $('ol').append('<li>append method</li>')
+            })
+            $('#prependBtn').click(function(){
+                $('ol').prepend('<li>Prepend method</li>')
+            })
+        })
+
+    </script>
+</body>
+</html>
